@@ -1,0 +1,10 @@
+
+
+.background{
+    
+    -fx-background-image: url("../images/3.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: 100% 100%;
+    
+}

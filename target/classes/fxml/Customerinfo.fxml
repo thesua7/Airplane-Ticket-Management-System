@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="774.0" styleClass="background" stylesheets="@../styles/Styles%20-%20Copy.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.atms.CustomerinfoController">
+   <children>
+      <DatePicker fx:id="DepDate" promptText="Choose Your Date" />
+      <HBox prefHeight="559.0" prefWidth="800.0">
+         <children>
+            <VBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="434.0" prefWidth="315.0">
+               <VBox.margin>
+                  <Insets bottom="100.0" left="50.0" right="150.0" top="150.0" />
+               </VBox.margin>
+               <children>
+                  <TextField editable="false" prefHeight="0.0" prefWidth="315.0" text="                     DHAKA">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="optionto" prefHeight="30.0" prefWidth="313.0" promptText="                                            TO" />
+                  <ComboBox fx:id="fname" prefHeight="29.0" prefWidth="313.0" promptText="                                         FLIGHT" />
+                  <ComboBox fx:id="seatclass" prefHeight="30.0" prefWidth="313.0" promptText="                                      SEAT CLASS" />
+                  <ComboBox fx:id="time" prefHeight="32.0" prefWidth="313.0" promptText="                                           Time" />
+                  <Button mnemonicParsing="false" onAction="#search" prefHeight="31.0" prefWidth="73.0" text="SEARCH" />
+                  <Label fx:id="hlabel" prefHeight="17.0" prefWidth="71.0" textFill="WHITE" />
+                  <Region prefHeight="35.0" prefWidth="367.0" />
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="42.0" prefWidth="300.0" text="Customer Information :" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cname" promptText="Customer Name">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </TextField>
+                  <TextField fx:id="cadd" layoutX="10.0" layoutY="85.0" promptText="Address" />
+                  <TextField fx:id="cphon" layoutX="10.0" layoutY="123.0" promptText="Phone Number" />
+                  <TextField fx:id="cemail" promptText="Email" />
+                  <ComboBox fx:id="gendar" prefHeight="25.0" prefWidth="325.0" promptText="Gender" />
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+            <Separator orientation="VERTICAL" prefHeight="218.0" prefWidth="53.0">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="80.0" top="20.0" />
+               </HBox.margin>
+            </Separator>
+            <VBox>
+               <children>
+                  <Label maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="63.0" prefWidth="262.0" text="Details :" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lndetail" prefHeight="266.0" prefWidth="283.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <Button mnemonicParsing="false" onAction="#submit" prefHeight="25.0" prefWidth="143.0" text="Submit">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+                  <TextField prefHeight="25.0" prefWidth="7.0" promptText="Payment" />
+                  <Button mnemonicParsing="false" onAction="#confirm" prefHeight="31.0" prefWidth="144.0" text="Confirm Flight">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+         <VBox.margin>
+            <Insets top="150.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+         <children>
+            <VBox>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox layoutX="60.0" layoutY="10.0">
+               <HBox.margin>
+                  <Insets left="120.0" />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

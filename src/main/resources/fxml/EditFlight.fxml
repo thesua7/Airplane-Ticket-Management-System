@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1003.0" styleClass="background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.atms.EditFlightController">
+   <stylesheets>
+      <URL value="@../styles/Styles_2.css" />
+      <URL value="@../styles/EditFlight.css" />
+   </stylesheets>
+   <children>
+      <HBox prefHeight="663.0" prefWidth="1003.0">
+         <children>
+            <VBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" opacity="0.8" prefHeight="521.0" prefWidth="358.0">
+               <children>
+                  <TextField fx:id="customerid" prefHeight="45.0" prefWidth="283.0" promptText="Customer ID">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></TextField>
+                  <ComboBox fx:id="optionto" prefHeight="54.0" prefWidth="364.0" promptText="DESTINATION" />
+                  <ComboBox fx:id="fname" prefHeight="54.0" prefWidth="364.0" promptText="FLIGHT NAME" />
+                  <ComboBox fx:id="seatclass" prefHeight="37.0" prefWidth="358.0" promptText="SEAT CLASS" />
+                  <ComboBox fx:id="time" prefHeight="34.0" prefWidth="358.0" promptText="Time" />
+                  <Button mnemonicParsing="false" onAction="#editbutton" prefHeight="25.0" prefWidth="116.0" text="Edit Flight" />
+               </children>
+            </VBox>
+            <HBox prefHeight="600.0" prefWidth="399.0">
+               <children>
+                  <VBox prefHeight="353.0" prefWidth="399.0" />
+                  <VBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="634.0">
+                     <children>
+                        <Label prefHeight="71.0" prefWidth="344.0" text="                       EDIT" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="cname" promptText="Customer Name" />
+                        <TextField fx:id="cadd" promptText="Address" />
+                        <TextField fx:id="cphon" promptText="Phone Number" />
+                        <TextField fx:id="cemail" promptText="Email" />
+                        <Button mnemonicParsing="false" onAction="#done" prefHeight="25.0" prefWidth="116.0" text="Done" />
+                        <Label fx:id="donelabel" prefHeight="40.0" prefWidth="114.0" textFill="WHITE" />
+                        <Region prefHeight="35.0" prefWidth="367.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

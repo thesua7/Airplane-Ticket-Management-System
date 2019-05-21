@@ -1,0 +1,8 @@
+com\mycompany\atms\SearchFlightController.class
+com\mycompany\atms\DestinationCustomer.class
+com\mycompany\atms\CustomerinfoController.class
+com\mycompany\atms\MainApp.class
+com\mycompany\atms\FXMLController.class
+com\mycompany\atms\EditFlightController.class
+com\mycompany\atms\CancelController.class
+com\mycompany\atms\FlightBookController.class
